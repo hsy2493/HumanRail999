@@ -16,7 +16,9 @@
 - 데이터 베이스(DataBase) 설계/ERD 설계 : <br> 
 ![image](https://github.com/user-attachments/assets/cfd4842b-76b6-4875-8164-1b0038974cea) <br>
 - PPT 자료 (https://github.com/hsy2493/HumanRail999/issues/1#issue-2509856113) <br>
-5. 작업 툴 : HTML, CSS, javascript, JSP, Java, Spring mvc, DataBase(Mybatis)
+5. 작업 툴 :
+  - Front-end : HTML, CSS, javascript, JSP <br>
+  - Back-end : Java, Spring mvc, DataBase(Mybatis) <br>
 6. 작업 인원 : 3명
 7. 결과물 : 
 ## <화면구현>
