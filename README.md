@@ -24,7 +24,7 @@
   https://github.com/hsy2493/HumanRail999/issues/1#issue-2509856113<br>
 5. 작업 툴 :
   - Front-end : HTML, CSS, javascript, JSP <br>
-  - Back-end : Java, Spring mvc, DataBase(Mybatis) <br>
+  - Back-end : Java, Spring mvc, DataBase <br>
 6. 작업 인원 : 3명
 
 7. 결과물 : 
