@@ -8,10 +8,14 @@
 - 일정표 : <br>
 ![개인 일정표](https://github.com/user-attachments/assets/8e704229-8bd5-4adf-abdc-1c4579e6eba3) <br>
 - 요구사항 정의서 : <br>
+(1) 로그인 & (2) 회원가입 & (3) 기차표 예매 <br>
 ![요구사항 정의서](https://github.com/user-attachments/assets/7692ee75-dd93-4c67-89e7-0226eb19defe) <br>
 - 워크 플로우 : <br>
+(1) 로그인 <br>
 ![로그인](https://github.com/user-attachments/assets/3dcf32c4-8720-417f-a034-31b206ccd6e8)<br><br>
+(2) 회원가입 <br>
 ![회원가입](https://github.com/user-attachments/assets/1aa251ea-a036-490f-9934-3da49aa7f40e)<br><br>
+(3) 기차표 예매 <br>
 ![열차표 예매](https://github.com/user-attachments/assets/46021288-2d87-4be0-ad6e-a39fe1d791a8)<br>
 - 데이터 베이스(DataBase) 설계/ERD 설계 : <br> 
 ![image](https://github.com/user-attachments/assets/cfd4842b-76b6-4875-8164-1b0038974cea) <br>
@@ -21,6 +25,7 @@
   - Front-end : HTML, CSS, javascript, JSP <br>
   - Back-end : Java, Spring mvc, DataBase(Mybatis) <br>
 6. 작업 인원 : 3명
+
 7. 결과물 : 
 ## <화면구현>
 (1) 로그인<br>
