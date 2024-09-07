@@ -17,6 +17,7 @@
 ![회원가입](https://github.com/user-attachments/assets/1aa251ea-a036-490f-9934-3da49aa7f40e)<br><br>
 (3) 기차표 예매 <br>
 ![열차표 예매](https://github.com/user-attachments/assets/46021288-2d87-4be0-ad6e-a39fe1d791a8)<br>
+
 - 데이터 베이스(DataBase) 설계/ERD 설계 : <br> 
 ![image](https://github.com/user-attachments/assets/cfd4842b-76b6-4875-8164-1b0038974cea) <br>
 - PPT 자료<br>
