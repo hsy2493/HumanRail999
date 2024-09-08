@@ -59,7 +59,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 3-2) 예매표 선택 <br>
 ![image](https://github.com/user-attachments/assets/703a25a3-df10-4e9e-b3ae-6cdd7d76a7bf) <br>
 - 기차표 예매 : 예매표 선택 - 화면구현 상세 코드 <br>
-https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a02_pay.jsp <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a01_reservation.jsp <br>
 
 3-3) 선택한 예매표 정보 조회 <br>
 ![image](https://github.com/user-attachments/assets/bc872893-5029-42e3-ab58-8977ded0cd6d) <br>
