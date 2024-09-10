@@ -101,7 +101,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htpr
 - 로그인 Service - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a02_Service/A04_LoginService.java <br>
 
--Mapping 방식 중 Post 방식(PostMapping)을 활용하여, 로그인 유효성 검사를 진행한다. <br>
+-Spring mvc패턴에서 Controller의 Mapping 방식 중 Post 방식(PostMapping)을 활용하여, 로그인 유효성 검사를 진행한다. <br>
 ![image](https://github.com/user-attachments/assets/b832381e-a2a2-4ff7-8f6c-e6096f0c4f69) <br>
 - 로그인 Controller - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A04_LoginController.java <br>
