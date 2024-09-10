@@ -1,4 +1,4 @@
-# <기차표 예매 사이트(4회차 프로젝트)>
+# <기차표 예매 사이트(4회차 프로젝트)> 🚂
 1. 작업 기간 : 2024. 06. 19 ~ 2024. 07. 12
 2. 주제 : 기차표 예매 사이트
 3. 목적 : 기차 배차 시간 확인, 기차표 예매 등 고객들이 기차를 더 편리하게 이용하는 것을 주목적으로 진행된 기차표 예매 사이트 프로젝트 입니다.<br>
@@ -61,21 +61,21 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/999/Membership/a03_end.jsp <br>
 
 (3) 기차표 예매<br>
-3-1) 기차표 조회 <br>
+3-1). 기차표 조회 <br>
 ![image](https://github.com/user-attachments/assets/89c4ee70-74e3-4aa8-a253-ab7c286deab9) <br>
 <설명> <br>
 -열차종류 또는 출발역 또는 도착역 중 한가지 정보 입력 후, 열차표 조회 버튼을 클릭하면 예매표 검색이 가능하다. <br>
 - 기차표 예매 : 기차표 조회 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a01_reservation.jsp <br>
 
-3-2) 예매표 선택 <br>
+3-2. 예매표 선택 <br>
 ![image](https://github.com/user-attachments/assets/703a25a3-df10-4e9e-b3ae-6cdd7d76a7bf) <br>
 <설명> <br>
 -예매할 기차표 확인 후, 예매하기 버튼을 클릭하면 기차표 예매가 가능하다. <br>
 - 기차표 예매 : 예매표 선택 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a01_reservation.jsp <br>
 
-3-3) 선택한 예매표 정보 조회 <br>
+3-3). 선택한 예매표 정보 조회 <br>
 ![image](https://github.com/user-attachments/assets/bc872893-5029-42e3-ab58-8977ded0cd6d) <br>
 <설명> <br>
 -예매할 기차표 정보가 조회된다. <br>
@@ -86,8 +86,30 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 (1) 로그인<br>
 
 (2) 회원가입<br>
+2-1). 약관동의 <br>
+![image](https://github.com/user-attachments/assets/f93e2b10-7395-4c1d-b359-a071d7760eb5) <br> 
+
+
+2-2). 회원정보 등록 <br>
+- 아이디 중복확인 <br>
+![image](https://github.com/user-attachments/assets/87614df3-1c79-47d9-bc68-6278ad2f3dc4) <br>
+![image](https://github.com/user-attachments/assets/9288c18f-b480-4833-829c-700db1bfa262) <br>
+
+- 비밀번호 재확인 <br>
+![image](https://github.com/user-attachments/assets/7a6f5b87-a6c6-44a4-b1e4-447543c2228c) <br>
+![image](https://github.com/user-attachments/assets/ee03dd02-4e4a-4ae4-839a-49c8e94420db) <br>
+
+- 회원정보 입력 <br>
+![image](https://github.com/user-attachments/assets/92aa0fb3-5b97-40e5-bd05-1e54b13ba29b) <br>
+
+2-3). 회원가입 완료 <br>
+
 
 (3) 기차표 예매<br>
+3-1). 기차표 조회 <br>
+3-2). 예매표 선택 <br>
+3-3). 선택한 예매표 정보 조회 <br>
 
 <b>8. 성과 : 
+- 
 </b> 
