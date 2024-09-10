@@ -83,27 +83,70 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a02_pay.jsp <br>
 
 ## <기능구현>
+- 프로젝트에 사용된 Tomcat Server (localhost:7080) 정보 <br>
+  ![image](https://github.com/user-attachments/assets/5ef71f24-b280-45dc-8a4c-243a86a0d16f) <br>
+<br>
+
 (1) 로그인<br>
+<설명> <br>
+-Database에 저장된 회원정보로 로그인을 시도한다. <br>
+![image](https://github.com/user-attachments/assets/d0b0d14e-8868-4508-8fd6-c57fe1141aa9) <br>
+-아이디 : h777, 비밀번호 : 7777 로 등록된 회원정보인 경우<br>
+  ![image](https://github.com/user-attachments/assets/886a3c70-58c6-422c-8b4f-5f2f6d8abb3d) <br>
+
+- 로그인 Dao - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A04_LoginDao.java <br>
+- 로그인 Service - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a02_Service/A04_LoginService.java <br>
+
+-Mapping 방식 중 Post 방식(PostMapping)을 활용하여, 로그인 유효성 검사를 진행한다. <br>
+![image](https://github.com/user-attachments/assets/b832381e-a2a2-4ff7-8f6c-e6096f0c4f69) <br>
+- 로그인 Controller - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A04_LoginController.java <br>
+
+- 로그인 실패 <br>
+![image](https://github.com/user-attachments/assets/4929466e-8464-4bb5-8dd5-59787a05d978) <br>
+<설명> <br>
+-로그인 실패 시, model.addAttribute()를 활용하여, Console창에 실패 메세지가 출력되면서, 로그인 페이지에 머문다.
+- 로그인 실패 - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A04_LoginController.java <br>
+
+- 로그인 성공<br>
+![image](https://github.com/user-attachments/assets/aeb36e09-f0ca-4be9-8f2c-61192d8eb750) <br>
+![image](https://github.com/user-attachments/assets/22ae0633-c733-40eb-a407-e27946c361d4) <br>
+![image](https://github.com/user-attachments/assets/fb8b86d4-7574-476e-8b0e-8b39e7d3ac33) <br>
+<설명> <br>
+-로그인 성공 시, model.addAttribute()를 활용하여, Console창에 성공 메세지가 출력되면서, 메인 페이지로 리다이랙션 한다.
+- 로그인 실패 - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A04_LoginController.java <br>
 
 (2) 회원가입<br>
-2-1). 약관동의 <br>
-![image](https://github.com/user-attachments/assets/f93e2b10-7395-4c1d-b359-a071d7760eb5) <br> 
-
-
 2-2). 회원정보 등록 <br>
 - 아이디 중복확인 <br>
 ![image](https://github.com/user-attachments/assets/87614df3-1c79-47d9-bc68-6278ad2f3dc4) <br>
 ![image](https://github.com/user-attachments/assets/9288c18f-b480-4833-829c-700db1bfa262) <br>
 
-- 비밀번호 재확인 <br>
-![image](https://github.com/user-attachments/assets/7a6f5b87-a6c6-44a4-b1e4-447543c2228c) <br>
-![image](https://github.com/user-attachments/assets/ee03dd02-4e4a-4ae4-839a-49c8e94420db) <br>
+![image](https://github.com/user-attachments/assets/c51667b1-86bd-4865-99a2-8a598bf0c977) <br>
+![image](https://github.com/user-attachments/assets/13d076a9-4313-443f-974e-d70b49ce2a1a) <br>
+![image](https://github.com/user-attachments/assets/8dd6458b-cfd7-41b8-87d8-9ef0a50df302) <br>
+<설명> <br>
+-Spring mvc 패턴에서 Dao의 SQL문 중 Select를 활용하여, <br>
+Database에 등록된 아이디와 유효성 검사(아이디 중복확인)가 된다.<br>
+- 회원정보 등록 : 아이디 중복확인 Dao - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A03_MemDao.java<br>
+
 
 - 회원정보 입력 <br>
 ![image](https://github.com/user-attachments/assets/92aa0fb3-5b97-40e5-bd05-1e54b13ba29b) <br>
 
-2-3). 회원가입 완료 <br>
-
+![image](https://github.com/user-attachments/assets/a80d2a46-5fff-49b0-bbca-0e1229edf302)<br>
+![image](https://github.com/user-attachments/assets/c498f74c-4089-460d-95fe-dd54515fcc3f)<br>
+![image](https://github.com/user-attachments/assets/cce2a90d-fefd-43a2-8bde-0f74c3f1babc)<br>
+<설명><br>
+-Spring mv 패턴에서 Daodml SQL문 중 Insert를 활용하여, <br>
+입력한 회원정보를 Database에 등록된다.<br>
+- 회원정보 등록 : 회원정보 입력 Dao - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A03_MemDao.java<br>
 
 (3) 기차표 예매<br>
 3-1). 기차표 조회 <br>
