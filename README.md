@@ -63,6 +63,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/99
 (3) 기차표 예매<br>
 3-1). 기차표 조회 <br>
 ![image](https://github.com/user-attachments/assets/89c4ee70-74e3-4aa8-a253-ab7c286deab9) <br>
+![image](https://github.com/user-attachments/assets/e9c2f633-032e-4f20-8836-ad8867e2b1f3) <br>
 <설명> <br>
 -열차종류 또는 출발역 또는 도착역 중 한가지 정보 입력 후, 열차표 조회 버튼을 클릭하면 예매표 검색이 가능하다. <br>
 - 기차표 예매 : 기차표 조회 - 화면구현 상세 코드 <br>
@@ -70,6 +71,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 
 3-2. 예매표 선택 <br>
 ![image](https://github.com/user-attachments/assets/703a25a3-df10-4e9e-b3ae-6cdd7d76a7bf) <br>
+![image](https://github.com/user-attachments/assets/3caaa8e9-b92d-4d70-a5eb-39b3486ac4b5) <br>
 <설명> <br>
 -예매할 기차표 확인 후, 예매하기 버튼을 클릭하면 기차표 예매가 가능하다. <br>
 - 기차표 예매 : 예매표 선택 - 화면구현 상세 코드 <br>
@@ -143,16 +145,50 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htpr
 ![image](https://github.com/user-attachments/assets/c498f74c-4089-460d-95fe-dd54515fcc3f)<br>
 ![image](https://github.com/user-attachments/assets/cce2a90d-fefd-43a2-8bde-0f74c3f1babc)<br>
 <설명><br>
--Spring mv 패턴에서 Daodml SQL문 중 Insert를 활용하여, <br>
+-Spring mvc 패턴에서 Dao의 SQL문 중 Insert를 활용하여, <br>
 입력한 회원정보를 Database에 등록된다.<br>
 - 회원정보 등록 : 회원정보 입력 Dao - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A03_MemDao.java<br>
 
 (3) 기차표 예매<br>
-3-1). 기차표 조회 <br>
-3-2). 예매표 선택 <br>
-3-3). 선택한 예매표 정보 조회 <br>
+3-1). 기차표 조회, 3-2). 예매표 선택 <br>
+![image](https://github.com/user-attachments/assets/45b57416-7946-4196-9d11-3f2b26dddeae) <br>
 
-<b>8. 성과 : 
+![image](https://github.com/user-attachments/assets/eed04f05-34d1-45b2-92d3-2db4d1f0b6d7) <br>
+![image](https://github.com/user-attachments/assets/a858680a-01d6-4f03-a2b8-287d99d42c15) <br>
+![image](https://github.com/user-attachments/assets/9d4a3ee6-1182-40bc-a832-acb1affe73b1) <br>
+<설명> <br>
+-Spring mvc 패턴에서 Service의 Model 데이터를 List로 가져오고, 이를 Dao의 SQL문 중 Select를 활용하여, <br>
+입력한 기차정보를 Database에서 조회하여 결과물을 가져온다. <br>
+-예시로, 열차종류에 '무궁화' 입력 시, 무궁화호 열차정보가 검색결과로 나타난다.<br>
+- 기차표 예매 : 기차표 조회 Service - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a02_Service/A01_TrainService.java <br>
+- 기차표 예매 : 기차표 조회 Dao - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A01_TrainDao.java<br>
+3-3). 선택한 예매표 정보 조회 <br>
+![image](https://github.com/user-attachments/assets/2d07ce41-425d-4ed1-955c-0b216c46eff9) <br>
+
+![image](https://github.com/user-attachments/assets/9970c08c-d40a-44b8-bb6d-94ae3b3d0814) <br>
+![image](https://github.com/user-attachments/assets/4e55239b-d343-4ede-8217-449e6be0661a) <br>
+![image](https://github.com/user-attachments/assets/5d383924-56db-4358-89aa-ea9a34becc72) <br>
+
+![image](https://github.com/user-attachments/assets/957e4503-fb44-4b3f-9697-b4da365b14a5) <br>
+
+<설명> <br>
+-Back-end에서 Spring mvc 패턴에서 Model과 Front-end에서 forEach문을 활용하여 연동 처리하고, <br>
+기차표 조회 페이지(Back)에서 선택한 예매표 정보(Front)를 가져온다.<br>
+- 기차표 예매 : 선택한 예매표 정보 조회 Controller - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A02_TicketController.java <br>
+- 기차표 예매 : 선택한 예매표 정보 조회 Service - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a02_Service/A02_TicketService.java <br>
+- 기차표 예매 : 선택한 예매표 정보 조회 Dao - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A02_TicketDao.java <br>
+- 기차표 예매 : 선택한 예매표 정보 조회 vo (Model) - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/vo/Train.java <br>
+- 기차표 예매 : 선택한 예매표 정보 조회 view (Front 단) - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a02_pay.jsp <br>
+
+<b>
+8. 성과 : 
 - 
 </b> 
