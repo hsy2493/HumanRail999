@@ -63,6 +63,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/99
 (3) 기차표 예매<br>
 3-1). 기차표 조회 <br>
 ![image](https://github.com/user-attachments/assets/89c4ee70-74e3-4aa8-a253-ab7c286deab9) <br>
+![image](https://github.com/user-attachments/assets/e9c2f633-032e-4f20-8836-ad8867e2b1f3) <br>
 <설명> <br>
 -열차종류 또는 출발역 또는 도착역 중 한가지 정보 입력 후, 열차표 조회 버튼을 클릭하면 예매표 검색이 가능하다. <br>
 - 기차표 예매 : 기차표 조회 - 화면구현 상세 코드 <br>
@@ -70,6 +71,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 
 3-2. 예매표 선택 <br>
 ![image](https://github.com/user-attachments/assets/703a25a3-df10-4e9e-b3ae-6cdd7d76a7bf) <br>
+![image](https://github.com/user-attachments/assets/3caaa8e9-b92d-4d70-a5eb-39b3486ac4b5) <br>
 <설명> <br>
 -예매할 기차표 확인 후, 예매하기 버튼을 클릭하면 기차표 예매가 가능하다. <br>
 - 기차표 예매 : 예매표 선택 - 화면구현 상세 코드 <br>
@@ -83,33 +85,110 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a02_pay.jsp <br>
 
 ## <기능구현>
+- 프로젝트에 사용된 Tomcat Server (localhost:7080) 정보 <br>
+  ![image](https://github.com/user-attachments/assets/5ef71f24-b280-45dc-8a4c-243a86a0d16f) <br>
+<br>
+
 (1) 로그인<br>
+<설명> <br>
+-Database에 저장된 회원정보로 로그인을 시도한다. <br>
+![image](https://github.com/user-attachments/assets/d0b0d14e-8868-4508-8fd6-c57fe1141aa9) <br>
+-아이디 : h777, 비밀번호 : 7777 로 등록된 회원정보인 경우<br>
+  ![image](https://github.com/user-attachments/assets/886a3c70-58c6-422c-8b4f-5f2f6d8abb3d) <br>
+
+- 로그인 Dao - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A04_LoginDao.java <br>
+- 로그인 Service - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a02_Service/A04_LoginService.java <br>
+
+-Mapping 방식 중 Post 방식(PostMapping)을 활용하여, 로그인 유효성 검사를 진행한다. <br>
+![image](https://github.com/user-attachments/assets/b832381e-a2a2-4ff7-8f6c-e6096f0c4f69) <br>
+- 로그인 Controller - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A04_LoginController.java <br>
+
+- 로그인 실패 <br>
+![image](https://github.com/user-attachments/assets/4929466e-8464-4bb5-8dd5-59787a05d978) <br>
+<설명> <br>
+-로그인 실패 시, model.addAttribute()를 활용하여, Console창에 실패 메세지가 출력되면서, 로그인 페이지에 머문다.
+- 로그인 실패 - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A04_LoginController.java <br>
+
+- 로그인 성공<br>
+![image](https://github.com/user-attachments/assets/aeb36e09-f0ca-4be9-8f2c-61192d8eb750) <br>
+![image](https://github.com/user-attachments/assets/22ae0633-c733-40eb-a407-e27946c361d4) <br>
+![image](https://github.com/user-attachments/assets/fb8b86d4-7574-476e-8b0e-8b39e7d3ac33) <br>
+<설명> <br>
+-로그인 성공 시, model.addAttribute()를 활용하여, Console창에 성공 메세지가 출력되면서, 메인 페이지로 리다이랙션 한다.
+- 로그인 실패 - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A04_LoginController.java <br>
 
 (2) 회원가입<br>
-2-1). 약관동의 <br>
-![image](https://github.com/user-attachments/assets/f93e2b10-7395-4c1d-b359-a071d7760eb5) <br> 
-
-
 2-2). 회원정보 등록 <br>
 - 아이디 중복확인 <br>
 ![image](https://github.com/user-attachments/assets/87614df3-1c79-47d9-bc68-6278ad2f3dc4) <br>
 ![image](https://github.com/user-attachments/assets/9288c18f-b480-4833-829c-700db1bfa262) <br>
 
-- 비밀번호 재확인 <br>
-![image](https://github.com/user-attachments/assets/7a6f5b87-a6c6-44a4-b1e4-447543c2228c) <br>
-![image](https://github.com/user-attachments/assets/ee03dd02-4e4a-4ae4-839a-49c8e94420db) <br>
+![image](https://github.com/user-attachments/assets/c51667b1-86bd-4865-99a2-8a598bf0c977) <br>
+![image](https://github.com/user-attachments/assets/13d076a9-4313-443f-974e-d70b49ce2a1a) <br>
+![image](https://github.com/user-attachments/assets/8dd6458b-cfd7-41b8-87d8-9ef0a50df302) <br>
+<설명> <br>
+-Spring mvc 패턴에서 Dao의 SQL문 중 Select를 활용하여, <br>
+Database에 등록된 아이디와 유효성 검사(아이디 중복확인)가 된다.<br>
+- 회원정보 등록 : 아이디 중복확인 Dao - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A03_MemDao.java<br>
+
 
 - 회원정보 입력 <br>
 ![image](https://github.com/user-attachments/assets/92aa0fb3-5b97-40e5-bd05-1e54b13ba29b) <br>
 
-2-3). 회원가입 완료 <br>
-
+![image](https://github.com/user-attachments/assets/a80d2a46-5fff-49b0-bbca-0e1229edf302)<br>
+![image](https://github.com/user-attachments/assets/c498f74c-4089-460d-95fe-dd54515fcc3f)<br>
+![image](https://github.com/user-attachments/assets/cce2a90d-fefd-43a2-8bde-0f74c3f1babc)<br>
+<설명><br>
+-Spring mvc 패턴에서 Dao의 SQL문 중 Insert를 활용하여, <br>
+입력한 회원정보를 Database에 등록된다.<br>
+- 회원정보 등록 : 회원정보 입력 Dao - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A03_MemDao.java<br>
 
 (3) 기차표 예매<br>
-3-1). 기차표 조회 <br>
-3-2). 예매표 선택 <br>
-3-3). 선택한 예매표 정보 조회 <br>
+3-1). 기차표 조회, 3-2). 예매표 선택 <br>
+![image](https://github.com/user-attachments/assets/45b57416-7946-4196-9d11-3f2b26dddeae) <br>
 
-<b>8. 성과 : 
+![image](https://github.com/user-attachments/assets/eed04f05-34d1-45b2-92d3-2db4d1f0b6d7) <br>
+![image](https://github.com/user-attachments/assets/a858680a-01d6-4f03-a2b8-287d99d42c15) <br>
+![image](https://github.com/user-attachments/assets/9d4a3ee6-1182-40bc-a832-acb1affe73b1) <br>
+<설명> <br>
+-Spring mvc 패턴에서 Service의 Model 데이터를 List로 가져오고, 이를 Dao의 SQL문 중 Select를 활용하여, <br>
+입력한 기차정보를 Database에서 조회하여 결과물을 가져온다. <br>
+-예시로, 열차종류에 '무궁화' 입력 시, 무궁화호 열차정보가 검색결과로 나타난다.<br>
+- 기차표 예매 : 기차표 조회 Service - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a02_Service/A01_TrainService.java <br>
+- 기차표 예매 : 기차표 조회 Dao - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A01_TrainDao.java<br>
+3-3). 선택한 예매표 정보 조회 <br>
+![image](https://github.com/user-attachments/assets/2d07ce41-425d-4ed1-955c-0b216c46eff9) <br>
+
+![image](https://github.com/user-attachments/assets/9970c08c-d40a-44b8-bb6d-94ae3b3d0814) <br>
+![image](https://github.com/user-attachments/assets/4e55239b-d343-4ede-8217-449e6be0661a) <br>
+![image](https://github.com/user-attachments/assets/5d383924-56db-4358-89aa-ea9a34becc72) <br>
+
+![image](https://github.com/user-attachments/assets/957e4503-fb44-4b3f-9697-b4da365b14a5) <br>
+
+<설명> <br>
+-Back-end에서 Spring mvc 패턴에서 Model과 Front-end에서 forEach문을 활용하여 연동 처리하고, <br>
+기차표 조회 페이지(Back)에서 선택한 예매표 정보(Front)를 가져온다.<br>
+- 기차표 예매 : 선택한 예매표 정보 조회 Controller - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A02_TicketController.java <br>
+- 기차표 예매 : 선택한 예매표 정보 조회 Service - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a02_Service/A02_TicketService.java <br>
+- 기차표 예매 : 선택한 예매표 정보 조회 Dao - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A02_TicketDao.java <br>
+- 기차표 예매 : 선택한 예매표 정보 조회 vo (Model) - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/vo/Train.java <br>
+- 기차표 예매 : 선택한 예매표 정보 조회 view (Front 단) - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a02_pay.jsp <br>
+
+<b>
+8. 성과 : 
 - 
 </b> 
