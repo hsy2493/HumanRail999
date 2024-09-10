@@ -188,13 +188,12 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htpr
 - 기차표 예매 : 선택한 예매표 정보 조회 view (Front 단) - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a02_pay.jsp <br>
 
-<b>
-8. 성과 : <br>
+<b> 8. 성과 : 
 - Spring mvc 패턴에서 SQL문의 등록(Insert)을 활용하여, 회원가입 중 회원정보 등록 기능구현이 가능함. <br>
 - Spring mvc 패턴에서 SQL문의 검색(Select)을 활용하여, 기차표 예매 중 예매표 조회 기능구현이 가능함. <br>
 - Back-end에서 Spring mvc을, Front-end에서 forEach문을 활용하여 연동처리 후, <br> 
   기차표 예매 중 선택한 예매표 정보를 다른 페이지로 넘겨 해당 정보만 조회 기능구현이 가능함. <br>
-- 프로젝트 진행용 Dynamic Web Project 생성이 가능함.
-- GitHub에 프로젝트 Updata(commit)이 가능함.
-- 프로젝트 파일 BackUp의 중요성을 다시 한 번 더 깨달음. (항상 이중 백업 하기)
+- 프로젝트 진행용 Dynamic Web Project 생성이 가능함.<br>
+- GitHub에 프로젝트 Updata(commit)이 가능함.<br>
+- 프로젝트 파일 BackUp의 중요성을 다시 한 번 더 깨달음. (항상 이중으로 백업하기) <br>
 </b> 
