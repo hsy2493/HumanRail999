@@ -193,7 +193,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 - Spring mvc 패턴에서 SQL문의 검색(Select)을 활용하여, 기차표 예매 중 예매표 조회 기능구현이 가능함. <br>
 - Back-end에서 Spring mvc을, Front-end에서 forEach문(js)을 활용하여 연동처리 후, <br> 
   기차표 예매 중 선택한 예매표 정보를 다른 페이지로 넘겨 해당 정보만 조회 기능구현이 가능함. <br>
-- Bootstrap 템플릿 사용이 가능함. <br>
+- Bootstrap 템플릿 사용법을 터득함. <br>
 - 프로젝트 진행용 Dynamic Web Project 생성이 가능함.<br>
 - GitHub에 프로젝트 Updata(commit)이 가능함.<br>
 - 프로젝트 파일 BackUp의 중요성을 다시 한 번 더 깨달음. (항상 이중으로 백업하기) <br>
