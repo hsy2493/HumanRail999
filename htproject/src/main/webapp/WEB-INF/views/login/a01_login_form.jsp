@@ -78,5 +78,11 @@
             </div>
         </form>
     </div>
+     <script type="text/javascript">
+ var error= "${error}"
+	 if(error != ""){
+	    alert(error)
+	 }
+ </script> 	
 </body>
 </html>

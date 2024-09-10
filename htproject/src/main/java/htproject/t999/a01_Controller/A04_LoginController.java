@@ -38,9 +38,7 @@ public class A04_LoginController {
 	            return "999\\login\\main.jsp"; //메인페이지로 이동  
 	            
 	        } else { //로그인 실패인 경우
-	            d.addAttribute("error");
-	            System.out.println("입력한 내용을 확인해주세요.");
-
+	            d.addAttribute("error", "입력한 내용을 확인해주세요.");
 	            return "WEB-INF\\views\\login\\a01_login_form.jsp";  
 	                   //로그인 페이지로 재이동
 	        }
