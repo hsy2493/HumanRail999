@@ -191,7 +191,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 <b> 8. 성과 : 
 - Spring mvc 패턴에서 SQL문의 등록(Insert)을 활용하여, 회원가입 중 회원정보 등록 기능구현이 가능함. <br>
 - Spring mvc 패턴에서 SQL문의 검색(Select)을 활용하여, 기차표 예매 중 예매표 조회 기능구현이 가능함. <br>
-- Back-end에서 Spring mvc을, Front-end에서 forEach문을 활용하여 연동처리 후, <br> 
+- Back-end에서 Spring mvc을, Front-end에서 forEach문(js)을 활용하여 연동처리 후, <br> 
   기차표 예매 중 선택한 예매표 정보를 다른 페이지로 넘겨 해당 정보만 조회 기능구현이 가능함. <br>
 - 프로젝트 진행용 Dynamic Web Project 생성이 가능함.<br>
 - GitHub에 프로젝트 Updata(commit)이 가능함.<br>
