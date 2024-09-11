@@ -1,8 +1,8 @@
 # <기차표 예매 사이트(4회차 프로젝트)> 🚂
 1. 작업 기간 : 2024. 06. 19 ~ 2024. 07. 12
 2. 주제 : 기차표 예매 사이트
-3. 목적 : HumanRail999 사이트는 기차 배차 시간 확인, 기차표 예매 등 고객들이 기차를 더 편리하게 이용하는 것을 주목적으로 진행된 기차표 예매 사이트 프로젝트 입니다.<br>
-4. 주요 기능 : 로그인, 회원가입, 기차표 예매
+3. 목적 : HumanRail999 사이트는 기차 배차 시간 확인, 기차표 예매 등 고객들이 기차 서비스를 더 편리하게 이용하는 것을 주목적으로 진행된 기차표 예매 사이트 프로젝트 입니다.<br>
+4. 주요 기능 : 로그인, 회원가입, 기차표 예매 <br>
 - 역할 분담 : <br>
   ![image](https://github.com/user-attachments/assets/51f070c5-2c6a-4537-b7e5-54328ecc114f) <br>
 - 일정표 : <br>
@@ -42,6 +42,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 ![image](https://github.com/user-attachments/assets/6a35b5d1-bf2a-4606-8f24-74bb0d499b06) <br>
 <설명> <br>
 -약관 내용 확인 후, 약관 내용에 동의(필수/선택)한다. <br>
+-단, 필수 약관내용에 동의해야지만, 회원정보 등록 창으로 이동한다.
 - 회원가입 : 약관동의 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/999/Membership/a01_meaning.jsp <br>
 
@@ -56,7 +57,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 2-3). 회원가입 완료 <br>
 ![image](https://github.com/user-attachments/assets/2179cc16-33bc-4024-b8dd-38db766500ac) <br>
 <설명> <br>
--회원가입 완료 후, 로그인창 또는 메인창으로 이동이 가능하다. <br>
+-회원가입 완료 후, 로그인 버튼 클릭 시, 로그인창으로, 메인창 버튼 클릭 시, 메인창으로 이동한다. <br>
 - 회원가입 : 회원가입 완료 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/999/Membership/a03_end.jsp <br>
 
@@ -65,7 +66,8 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/99
 ![image](https://github.com/user-attachments/assets/89c4ee70-74e3-4aa8-a253-ab7c286deab9) <br>
 ![image](https://github.com/user-attachments/assets/e9c2f633-032e-4f20-8836-ad8867e2b1f3) <br>
 <설명> <br>
--열차종류 또는 출발역 또는 도착역 중 한가지 정보 입력 후, 열차표 조회 버튼을 클릭하면 예매표 검색이 가능하다. <br>
+-열차종류 또는 출발역 또는 도착역 중 한가지 정보 입력 후, <br>
+열차표 조회 버튼을 클릭하면, 예매표 검색이 가능하다. <br>
 - 기차표 예매 : 기차표 조회 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a01_reservation.jsp <br>
 
@@ -73,14 +75,14 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 ![image](https://github.com/user-attachments/assets/703a25a3-df10-4e9e-b3ae-6cdd7d76a7bf) <br>
 ![image](https://github.com/user-attachments/assets/3caaa8e9-b92d-4d70-a5eb-39b3486ac4b5) <br>
 <설명> <br>
--예매할 기차표 확인 후, 예매하기 버튼을 클릭하면 기차표 예매가 가능하다. <br>
+-예매할 기차표 확인 후, 예매하기 버튼을 클릭하면, 기차표 예매가 가능하다. <br>
 - 기차표 예매 : 예매표 선택 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a01_reservation.jsp <br>
 
 3-3). 선택한 예매표 정보 조회 <br>
 ![image](https://github.com/user-attachments/assets/bc872893-5029-42e3-ab58-8977ded0cd6d) <br>
 <설명> <br>
--예매할 기차표 정보가 조회된다. <br>
+-예매할 기차표 상세 정보가 확인된다. <br>
 - 기차표 예매 : 선택한 정보 조회 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a02_pay.jsp <br>
 
@@ -93,7 +95,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
 <설명> <br>
 -Database에 저장된 회원정보로 로그인을 시도한다. <br>
 ![image](https://github.com/user-attachments/assets/d0b0d14e-8868-4508-8fd6-c57fe1141aa9) <br>
--아이디 : h777, 비밀번호 : 7777 로 등록된 회원정보인 경우<br>
+-예시 회원정보로, 아이디 : h777, 비밀번호 : 7777 로 등록된 회원정보인 경우<br>
   ![image](https://github.com/user-attachments/assets/886a3c70-58c6-422c-8b4f-5f2f6d8abb3d) <br>
 
 - 로그인 Dao - 기능구현 상세 코드 <br>
@@ -101,7 +103,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htpr
 - 로그인 Service - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a02_Service/A04_LoginService.java <br>
 
--Spring mvc패턴에서 Controller의 Mapping 방식 중 Post 방식(PostMapping)을 활용하여, 로그인 유효성 검사를 진행한다. <br>
+-Spring mvc 패턴에서 Controller의 Mapping 방식 중 Post 방식(PostMapping)을 활용하여, 로그인 유효성 검사를 진행한다. <br>
 ![image](https://github.com/user-attachments/assets/b832381e-a2a2-4ff7-8f6c-e6096f0c4f69) <br>
 - 로그인 Controller - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A04_LoginController.java <br>
@@ -109,7 +111,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htpr
 - 로그인 실패 <br>
 ![image](https://github.com/user-attachments/assets/4929466e-8464-4bb5-8dd5-59787a05d978) <br>
 <설명> <br>
--로그인 실패 시, model.addAttribute()를 활용하여, Console창에 실패 메세지가 출력되면서, 로그인 페이지에 머문다.
+-로그인 실패 시, model.addAttribute를 활용하여, Console창에 실패 메세지가 출력되면서, 로그인 페이지에 머문다.
 - 로그인 실패 - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A04_LoginController.java <br>
 
@@ -133,7 +135,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htpr
 ![image](https://github.com/user-attachments/assets/8dd6458b-cfd7-41b8-87d8-9ef0a50df302) <br>
 <설명> <br>
 -Spring mvc 패턴에서 Dao의 SQL문 중 Select를 활용하여, <br>
-Database에 등록된 아이디와 유효성 검사(아이디 중복확인)가 된다.<br>
+Database에 등록된 아이디와 유효성 검사(아이디 중복확인)가 가능하다.<br>
 - 회원정보 등록 : 아이디 중복확인 Dao - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A03_MemDao.java<br>
 
@@ -195,6 +197,6 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WE
   기차표 예매 중 선택한 예매표 정보를 다른 페이지로 넘겨 해당 정보만 조회 기능구현이 가능함. <br>
 - Bootstrap 템플릿 사용법을 터득함. <br>
 - 프로젝트 진행용 Dynamic Web Project 생성이 가능함.<br>
-- GitHub에 프로젝트 Updata(commit)이 가능함.<br>
+- GitHub에 프로젝트 Update(commit)이 가능함.<br>
 - 프로젝트 파일 BackUp의 중요성을 다시 한 번 더 깨달음. (항상 이중으로 백업하기) <br>
 </b> 
