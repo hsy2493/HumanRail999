@@ -181,7 +181,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htpr
 
 ![image](https://github.com/user-attachments/assets/957e4503-fb44-4b3f-9697-b4da365b14a5) <br>
 <설명> <br>
--Back-end에서는 Spring mvc 패턴에서 Model를 Front-end에서는 forEach문을 활용하여, 서로 연동 처리하고, <br>
+-Back-end에서는 Spring mvc 패턴에서 Model을 Front-end에서는 forEach문을 활용하여, 서로 연동 처리하고, <br>
 기차표 조회 페이지(Back)에서 선택한 예매표 정보(Front)를 가져온다.<br>
 - 기차표 예매 : 선택한 예매표 정보 조회 Controller - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a01_Controller/A02_TicketController.java <br>
