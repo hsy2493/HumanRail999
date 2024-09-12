@@ -23,7 +23,7 @@
 - PPT 자료<br>
   https://github.com/hsy2493/HumanRail999/issues/1#issue-2509856113<br>
 5. 작업 툴 :
-  - Front-end : HTML, CSS, javascript, JSP <br>
+  - Front-end : HTML, CSS, Javascript, JSP <br>
   - Back-end : Java, Spring mvc, DataBase <br>
 6. 작업 인원 : 3명
 
