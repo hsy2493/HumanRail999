@@ -24,7 +24,7 @@
   https://github.com/hsy2493/HumanRail999/issues/1#issue-2509856113<br>
 5. 작업 툴 :
   - Front-end : HTML, CSS, Javascript, JSP <br>
-  - Back-end : Java, Spring mvc, DataBase <br>
+  - Back-end : Java, Spring mvc, DataBase(Mybatis) <br>
 6. 작업 인원 : 3명
 
 7. 결과물 : 
@@ -139,7 +139,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htpr
 ![image](https://github.com/user-attachments/assets/13d076a9-4313-443f-974e-d70b49ce2a1a) <br>
 ![image](https://github.com/user-attachments/assets/8dd6458b-cfd7-41b8-87d8-9ef0a50df302) <br>
 <설명> <br>
--Spring mvc 패턴에서 Dao의 SQL문 중 Select를 활용하여, <br>
+-Spring mvc 패턴에서 Dao의 Mybatis에서 Select를 활용하여, <br>
 Database에 등록된 아이디와 유효성 검사(아이디 중복확인)를 시도한다.<br>
 - 회원정보 등록 : 아이디 중복확인 Dao - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A03_MemDao.java<br>
@@ -151,7 +151,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htpr
 ![image](https://github.com/user-attachments/assets/c498f74c-4089-460d-95fe-dd54515fcc3f)<br>
 ![image](https://github.com/user-attachments/assets/cce2a90d-fefd-43a2-8bde-0f74c3f1babc)<br>
 <설명><br>
--Spring mvc 패턴에서 Dao의 SQL문 중 Insert를 활용하여, <br>
+-Spring mvc 패턴에서 Dao의 Mybatis에서 Insert를 활용하여, <br>
 새로 입력한 회원정보가 Database에 등록된다.<br>
 - 회원정보 등록 : 회원정보 입력 Dao - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htproject/t999/a03_Dao/A03_MemDao.java<br>
@@ -165,7 +165,7 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htpr
 ![image](https://github.com/user-attachments/assets/a858680a-01d6-4f03-a2b8-287d99d42c15) <br>
 ![image](https://github.com/user-attachments/assets/9d4a3ee6-1182-40bc-a832-acb1affe73b1) <br>
 <설명> <br>
--Spring mvc 패턴에서 Service의 Model 데이터를 List로 가져오고, 이를 Dao의 SQL문 중 Select를 활용하여, <br>
+-Spring mvc 패턴에서 Service의 Model 데이터를 List로 가져오고, 이를 Dao의  Mybatis에서 Select를 활용하여, <br>
 입력한 기차정보를 Database에서 조회하여 결과물을 가져온다. <br>
 -예시로, 열차종류에 '무궁화' 입력 시, 무궁화호의 열차정보가 검색 결과로 나타난다.<br>
 - 기차표 예매 : 기차표 조회 Service - 기능구현 상세 코드 <br>
@@ -195,8 +195,8 @@ https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/java/htpr
 https://github.com/hsy2493/HumanRail999/blob/master/htproject/src/main/webapp/WEB-INF/views/Ticket/a02_pay.jsp <br>
 
 <b> 8. 성과 : 
-- Spring mvc 패턴에서 SQL문의 등록(Insert)을 활용하여, 회원가입 중 회원정보 등록 기능구현이 가능함. <br>
-- Spring mvc 패턴에서 SQL문의 검색(Select)을 활용하여, 기차표 예매 중 예매표 조회 기능구현이 가능함. <br>
+- Mybatis에서 등록(Insert)을 활용하여, 회원가입 중 회원정보 등록 기능구현이 가능함. <br>
+- Mybatis에서 검색(Select)을 활용하여, 기차표 예매 중 예매표 조회 기능구현이 가능함. <br>
 - Back-end에서 Spring mvc을, Front-end에서 forEach문(js)을 활용하여 연동처리한 후, <br> 
   기차표 예매 중 선택한 예매표 정보를 다른 페이지로 넘겨 해당 정보만 조회 기능구현이 가능함. <br>
 - Bootstrap 템플릿 사용법을 터득함. <br>
